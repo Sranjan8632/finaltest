@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@RestController
+     @RestController
 public class ProductController {
 
     private static final List<Product> products = Arrays.asList(
@@ -25,17 +25,17 @@ public class ProductController {
             new Product(110, "LondonBridge", "Shirts", 700)
     );
 
-    // Endpoint to return all products
-    @GetMapping("/getAllProducts")
+          // Endpoint to return all products
+         @GetMapping("/getAllProducts")
     public List<Product> getAllProducts() {
-        return products;
+             return products;
     }
 
-    // Endpoint to get products by type and price
-    @GetMapping("/getByTypeAndPrice")
+          // Endpoint to get products by type and price
+       @GetMapping("/getByTypeAndPrice")
     public List<Product> getByTypeAndPrice(@RequestParam String type, @RequestParam double price) {
-        return products.stream()
+         return products.stream()
                 .filter(product -> product.getType().equalsIgnoreCase(type) && product.getPrice() > price)
                 .collect(Collectors.toList());
-    }
-}
+            }
+ }
