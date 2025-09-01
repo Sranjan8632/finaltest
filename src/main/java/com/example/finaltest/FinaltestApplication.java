@@ -3,10 +3,10 @@ package com.example.finaltest;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+     @SpringBootApplication
 public class FinaltestApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(FinaltestApplication.class, args);
+            SpringApplication.run(FinaltestApplication.class, args);
     }
 }
